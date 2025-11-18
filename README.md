@@ -1,16 +1,69 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# NewAssignment
 
-Currently, two official plugins are available:
+A small workspace containing a React + Vite frontend and a directory for data-structures & algorithm (DSA) practice problems.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## React Compiler
+This repository is organized to keep a lightweight frontend app (built with React and Vite) separate from algorithm practice code under `DSA/`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Repository Structure
 
-## Expanding the ESLint configuration
+- `Frontend/` — React + Vite app (source in `src/`, config and scripts included).
+- `DSA/` — small JavaScript files with algorithm examples and exercises (runnable with Node.js).
+- `README.md` — this file.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Prerequisites
+
+- Node.js 18+ and npm (or a compatible Node version).
+
+## Frontend — Setup & Run
+
+1. Install dependencies:
+
+```
+cd Frontend
+npm install
+```
+
+2. Run development server (Vite):
+
+```
+npm run dev
+```
+
+3. Build for production:
+
+```
+npm run build
+```
+
+4. Preview a production build locally:
+
+```
+npm run preview
+```
+
+5. Lint code:
+
+```
+npm run lint
+```
+
+## Deployment
+
+- Frontend live demo: https://ghvdatatable.netlify.app/ (hosted on Netlify)
+
+
+## DSA — Running examples
+
+Example files are plain JavaScript and can be executed with Node.js. For example:
+
+```
+node DSA/problem.js
+```
+
+The `DSA/problem.js` file contains a sample function and a few `console.log` calls demonstrating output.
+
+
+
